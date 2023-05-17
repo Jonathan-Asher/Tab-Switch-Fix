@@ -2,7 +2,7 @@
     "name": "Tab Switch Fix",
     "version": "1.0.0",
     "description": "Adds a the Command+Shirt+Left/Right arrow shortcut to tab switching for macOS.\n And for windows it's Ctrl+Shirt+Left/Right arrow.",
-    "manifest_version": 2,
+    "manifest_version": 3,
     "author": "Jonathan Ashurov",
     "icons": {
       "128": "dark_icon.png"
@@ -22,7 +22,6 @@
       }
   },
   "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+    "service_worker": "worker.js"
   }
 }
